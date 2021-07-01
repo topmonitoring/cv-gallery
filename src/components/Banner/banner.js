@@ -12,7 +12,7 @@ const Banner = () => {
   const { placeholderImage } = useStaticQuery(
     graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "flames.jpg" }) {
+        placeholderImage: file(relativePath: { eq: "mother-of-chaos.jpg" }) {
           childImageSharp {
             gatsbyImageData(quality: 90, width: 1920, formats: [AUTO, WEBP])
           }
@@ -37,6 +37,7 @@ const Banner = () => {
         {...bgImage}
         preserveStackingContext
         className="hero-image"
+        alt="bgimage"
       >
         <GatsbyImage image={image} />
         <div className="hero-content">
@@ -46,7 +47,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-            It's time to make your business <span>stand out</span>
+            Wellcome my neme is <span>VANIA DOBREVA</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -54,8 +55,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            Startup is here to help you achieve your business and personal
-            goals, all through a stylish theme
+            This is my super cool website take a look
           </motion.p>
           <Link to="about" smooth={true} duration={500}>
             <span className="sr-only">Jump to about</span>

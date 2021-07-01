@@ -18,17 +18,26 @@ module.exports = {
     twitterUsername: "@twitter",
   },
   plugins: [
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `images`),
+        path: `${__dirname}/src/images`,
       },
-    },
+    },  
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `galleryimg`,
+        path: `${__dirname}/src/components/Gallery/galleryimg`,
+      },
+    },    
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sitemap`
+    
   ],
 }

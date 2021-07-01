@@ -15,11 +15,13 @@ import perk3Img from "../images/friendly-staff.svg"
 
 import { IconContext } from "react-icons"
 import { MdDone, MdClear } from "react-icons/md"
+import Gallery from "../components/Gallery/gallery"
 
 const HomePage = () => {
   return (
     <>
       <Banner />
+      
       <TextBlock
         id="about"
         title="Developing a new business is never easy, but Startup is here to help"
@@ -31,32 +33,34 @@ const HomePage = () => {
       </TextBlock>
       <TextBlockImg
         id="perks"
-        title="We have the tools to help you suceed"
-        subtitle="Startup is perfect for helping to to start and grow your business. As
-          you begin to gain new clients and expand you will see the benefits of
-          a super-fast Gatsby website"
+        title="Hire me today"
+        subtitle="artist/sculptor/graphic design and a total badass"
       >
+
+
+
         <div className="flex-container trio-block">
           <Perk
             img={perk1Img}
             alt="Super fast speed increases"
             title="Speedy"
-            content="Super-fast response times ensure your business is not affected"
+            content="Super-fast and top tear quallity work"
           />
           <Perk
             img={perk2Img}
             alt="Great savings to be made"
             title="Affordable"
-            content="A choice of packages to suit every business type and size"
+            content="well balanced and afordable prices "
           />
           <Perk
             img={perk3Img}
             alt="Super fast speed increases"
             title="Friendly"
-            content="Advisors who are available 24/7, all with exprt knowledge"
+            content="good behavior and atention to detail providing you full satisfaction"
           />
         </div>
       </TextBlockImg>
+      <Gallery/>
       <Packages
         title="Our Packages"
         para="Choose the perfect solution for you. With benefits to suit all budgets Startup can offer amazing value and expert advice"
@@ -140,8 +144,8 @@ const HomePage = () => {
       </Packages>
       <Contact
         id="contact"
-        title="Contact Startup today and see how we can help your business grow"
-        subtitle="Every second counts when you're looking to get your new business started. Drop Startup a message and one of our representatives will be in contact"
+        title="Contact me today"
+        subtitle="Every second counts when you're looking to get your new business started. Drop me a message and I will contact you shortly"
       />
     </>
   )
