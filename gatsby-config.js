@@ -32,7 +32,14 @@ module.exports = {
         name: `galleryimg`,
         path: `${__dirname}/src/components/Gallery/galleryimg`,
       },
-    },    
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `galleryimg`,
+        path: `${__dirname}/src/components/gallery/galleryimg`,
+      },
+    },       
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
